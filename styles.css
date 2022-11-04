@@ -7,10 +7,6 @@
     margin: 0;
 }
 
-html {
-    height: 100%;
-}
-
 /* Generelle regler for alt i Body */
 body {
     color: white;
@@ -72,7 +68,6 @@ header hr {
 .burger, .burger input {
     display: none;
 }
-
 
 /*HERO*/
 .hero {
@@ -283,19 +278,19 @@ header hr {
     width: 100%;
 }
 /* Styling af tekst */
-.sæsonkort-text h1 {
+.saesonkort-text h1 {
     font-size: 20pt;
     font-weight: 600;
     padding-bottom: 20px;
     text-transform: uppercase;
 }
-.sæsonkort-text p {
+.saesonkort-text p {
     width: 90%;
     font-size: 13pt;
     padding-bottom: 50px;
     line-height: 25px;
 }
-.sæsonkort-text a {
+.saesonkort-text a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -306,7 +301,7 @@ header hr {
     border-radius: 30px;
     transition: .2s;
 }
-.sæsonkort-text a:hover {
+.saesonkort-text a:hover {
     background-color: #101325;
 }
 .video {
@@ -319,7 +314,6 @@ header hr {
 }
 
 /* HER STARTER MEDIA QUERIES */
-
 
 /* Her rettes logo og links i header til, når skærmen gøres mindre */
 @media screen and (max-width: 1400px) {
