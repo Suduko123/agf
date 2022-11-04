@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Generelle regler for hele sitet */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +11,7 @@ html {
     height: 100%;
 }
 
+/* Generelle regler for alt i Body */
 body {
     color: white;
     font-family: 'Rokkitt', serif;
@@ -41,6 +41,7 @@ header a:hover {
 header hr {
     border-color: rgba(255, 255, 255, 0.5);
 }
+/* Styling af øvre links */
 .øvre_links {
     text-align: right;
     padding: 25px;
@@ -50,6 +51,7 @@ header hr {
 .øvre_links a {
     padding: 10px;
 }
+/* Styling af nedre links */
 .nedre_links {
     text-align: right;
     padding: 25px 10px;
@@ -66,6 +68,7 @@ header hr {
     justify-content: space-between;
     width: 100%;
 }
+/* Burger skal ikke vises på stor skærm */
 .burger, .burger input {
     display: none;
 }
@@ -114,7 +117,7 @@ header hr {
     background-color: rgba(255, 255, 255, 0.199);
 }
 
-/*NYHEDER SEKTION*/
+/* Styling af "pre". Denne sektion er en form for overskrift før et afsnit på siden */
 .pre {
     color: black;
     padding-bottom: 20px;
@@ -131,10 +134,13 @@ header hr {
 }
 
 /*ARTIKEL BOKSE*/
+
+/* Her rykkes hele bokse afsnittet */
 .allebokse {
     padding-bottom: 50px;
 }
 
+/* Styling af alle bokse */
 .bokse {
     display: flex;
     justify-content: space-between;
@@ -145,6 +151,7 @@ header hr {
     max-width: 1560px;
 }
 
+/* Styling af hver enkelt boks */
 .bokse div {
     width: 33%;
     height: 384px;
@@ -161,6 +168,7 @@ header hr {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
+/* Styling af tekstelementer i boksene */
 .bokse h2 {
     text-transform: uppercase;
     font-size: 10pt;
@@ -173,16 +181,19 @@ header hr {
     letter-spacing: 1.5px;
 }
 
+/* Her bruges position absolute til at placere datoerne i hver boks så de ikke rykker sig i henhold til teksten */
 .bokse p {
     position: absolute;
     bottom: 30px;
     font-size: 12pt;
 }
 
+/* De to unikke bokse skal fylde 70% */
 .bokse .unik {
     width: 70%;
 }
 
+/* Her indsættes billeder i hver boks */
 #boks1 {
     background-image: url(images/fyldte-tribuner-1.jpg);
     background-size: cover;
@@ -215,10 +226,12 @@ header hr {
 }
 
 /* KORTSEKTION */
+
+/* Her rykkes hele kort afsnittet */
 .allekort {
     padding-bottom: 100px;
 }
-
+/* Styling af kortsektionen */
 .kortsektion {
     display: flex;
     justify-content: space-around;
@@ -230,12 +243,14 @@ header hr {
     padding-bottom: 20px;
     max-width: 1560px;
 }
+/* Styling af hver enkelt div */
 .kortsektion div {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
 }
+
 .kortsektion div iframe {
     border-radius: 5px;
 }
@@ -248,12 +263,13 @@ header hr {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -250px;
+    margin-bottom: 100px;
 }
 
 /* SÆSONKORT OG VIDEO */
 
+/* Styling af hele sæsonkort afsnittet*/
 .saesonkort {
-    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     color: black;
@@ -262,9 +278,11 @@ header hr {
     margin: auto;
     max-width: 1560px;
 }
+/* Hver div skal fylde 100% */
 .saesonkort div {
     width: 100%;
 }
+/* Styling af tekst */
 .sæsonkort-text h1 {
     font-size: 20pt;
     font-weight: 600;
@@ -295,12 +313,15 @@ header hr {
     border-radius: 10px;
 }
 
-
 /*Fjerner bundlinks*/
 .bundlinks {
     display: none;
 }
 
+/* HER STARTER MEDIA QUERIES */
+
+
+/* Her rettes logo og links i header til, når skærmen gøres mindre */
 @media screen and (max-width: 1400px) {
     header img {
         left: 50px;
@@ -313,6 +334,7 @@ header hr {
     }
 }
 
+/* Her ændres de fleste ting */
 @media screen and (max-width: 1050px) {
     .bokse {
         flex-direction: column;
@@ -427,6 +449,13 @@ header hr {
         gap: 20px;
     }
 
+    /* SORT & HVID */
+    .sorthvid {
+        background-position-y: -50px;
+        margin-bottom: 100px;
+    }
+
+/* Denne media query bruges til at ændre små detaljer når skærmen er meget lille */
 @media screen and (max-width: 530px) {
     .text {
         text-align: center;
