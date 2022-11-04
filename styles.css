@@ -251,6 +251,12 @@ header hr {
     border-radius: 5px;
 }
 
+/* IFRAME */
+iframe {
+    width: 100%;
+    border: 0;
+}
+
 /* SORT HVID BILLEDE */
 .sorthvid {
     height: 500px;
@@ -307,6 +313,8 @@ header hr {
 }
 .video {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
 }
 
 /*Fjerner bundlinks*/
